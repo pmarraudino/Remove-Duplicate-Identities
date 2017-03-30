@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace RemoveDuplicateIdentities
 {
-    class Program
+    class PathFinder
     {
-        static void Main(string[] args)
+        static public String FilePath(string fileName)
         {
-            RemoveDuplicateValues.RmvDupValues();
+            var path = Environment.CurrentDirectory + @"..\..\..\csvFiles\" + fileName;
+            return path;
         }
     }
 }
